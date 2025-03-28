@@ -1,0 +1,44 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# dotenv
+.env
+
+# Dependency directories
+node_modules/
+
+# Vite/React build
+dist/
+.vite/
+
+# TypeScript output
+*.tsbuildinfo
+
+# macOS system files
+.DS_Store
+
+# VSCode config
+.vscode/
+
+# Coverage reports
+coverage/
+
+# SQLite / database files (if used)
+*.sqlite
+*.sqlite3
+
+# Yarn / pnpm
+.yarn/
+.pnp.*
+
+# Optional: backup files
+*.bak
+*.tmp
