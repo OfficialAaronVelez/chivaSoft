@@ -11,11 +11,11 @@ import { requireRol } from '../middlewares/rolCheck';
 
 const router = Router();
 
-router.patch('/:id/revertir', requireRol(['admin,operdador']), revertirReporte);
-router.patch('/:id/reportar', requireRol(['admin,operdador']), reportarDanio)
+router.patch('/:id/revertir', requireRol(['admin', 'entrenador']), revertirReporte);
+router.patch('/:id/reportar', requireRol(['admin', 'entrenador']), reportarDanio)
 router.get('/', getEquipamiento);
-router.post('/', requireRol(['admin,operdador']), createEquipamiento);
-router.put('/:id', requireRol(['admin,operdador']), updateEquipamiento);
-router.delete('/:id', requireRol(['admin,operdador']), deleteEquipamiento);
+router.post('/', requireRol(['admin', 'entrenador']), createEquipamiento);
+router.put('/:id', requireRol(['admin', 'entrenador']), updateEquipamiento);
+router.delete('/:id', requireRol(['admin', 'entrenador']), deleteEquipamiento);
 
 export default router;

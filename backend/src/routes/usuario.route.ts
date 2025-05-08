@@ -1,9 +1,10 @@
-import { Router } from 'express';
-import { login, getUsuarios } from '../controllers/usuario.controller';
+import { Router } from 'express'
+import { login, getUsuarios, createUsuario } from '../controllers/usuario.controller'
 
-const router = Router();
+const router = Router()
 
-router.post('/login', login);
-router.get('/', getUsuarios);
+router.post('/login', login)
+router.get('/', getUsuarios)
+router.post('/', createUsuario) // Ruta para crear usuario (restringida a admin)
 
-export default router;
+export default router
